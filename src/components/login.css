@@ -1,0 +1,36 @@
+/*Login  Css*/
+.login-wrapper{ position:fixed; width:65%; height:auto; top:50%; left:50%; transform: translate(-50%, -50%); z-index:220000; }
+.login-wrapper .login-container{ display:flex; background-color: #f2f2f2; padding:0px; position: relative;  background-color: #f9f9f9; box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+    border-radius:0px;}
+.login-wrapper .login-container .left-section{width: 55%; padding-top:70px;  display: flex; justify-content: center; align-items:flex-start; background-color: #838aad; background-repeat:no-repeat; background-position: center bottom; }    
+.login-wrapper .login-container .right-section{width: 45%;}
+.login-wrapper .login-container .right-section .form-wrapper{display: flex; flex-direction: column; padding:50px}
+.login-wrapper .login-container .right-section .form-wrapper .login-title{letter-spacing: 0.5px; font-size:15px; font-family: 'latobold'; color:#7b7b7b; display: flex; width: 100%; justify-content: center; align-items: center; text-transform: uppercase;}
+.login-wrapper .login-container .right-section .form-block{ display: flex; flex-direction: column; }
+.login-wrapper .login-container .right-section .form-block .login-block{display: flex; flex-direction: column; margin-top: 30px;}
+.login-wrapper .login-container .right-section .form-block .login-block label{text-transform:uppercase;font-size:11px; letter-spacing: 0.5px; color: #b2b2b2; font-family: 'latobold'; margin-bottom:10px;}   
+.login-wrapper .login-container .right-section .form-block .login-block input{transition:all 0.2s ease; border:0px none; font-size: 12px; color: #666;padding:10px 10px;border-bottom: 1px solid #c7c7c7} 
+.login-wrapper .login-container .right-section .form-block .login-block input:focus{outline:0px none; background-color: #fff;border-bottom: 1px solid #333;} 
+.login-wrapper .login-container .right-section .form-action{display: flex; width: 100%; align-items: center; justify-content: center;  margin-top: 30px;}
+.login-wrapper .login-container .right-section .form-action input[type="submit"]{width:100%; letter-spacing: 0.5px; padding:10px 20px; font-family: 'latobold'; font-size: 14px; text-transform: uppercase; border:0px solid #5d6487; background-color: #5d6487; color:#fefefe; cursor: pointer;}
+.login-wrapper .login-container .right-section .form-action input[type="submit"]:hover{width:100%; letter-spacing: 0.5px; padding:10px 20px; font-family: 'latobold'; font-size: 14px; text-transform: uppercase; border:0px solid #5d6487; background-color: #2c345a; color:#fefefe; cursor: pointer;}
+.login-wrapper .login-container .right-section .remember-block{margin-top:10px; display: flex; width: 100%; justify-content: space-between; align-items: center;}
+.login-wrapper .login-container .right-section .remember-block a {color:#b2b2b2; font-size: 12px; text-decoration: underline; font-family: 'latoregular';}
+.login-wrapper .login-container .right-section .remember-block a:hover{color:#666; text-decoration: none; font-family: 'latoregular';}
+.login-wrapper .login-container .right-section .remember-block label{position:relative; display:flex; color:#b2b2b2; font-family: 'latoregular'; font-size: 12px;}
+.login-wrapper .login-container .right-section .remember-block label input{position: absolute; opacity: 0; visibility: hidden;}
+.login-wrapper .login-container .right-section .remember-block label span{width:16px;position:relative;  margin-right: 5px; height:16px; border:2px solid #b2b2b2; border-radius:4px; color:#b2b2b2; font-family: 'latoregular'; font-size: 11px;}
+.login-wrapper .login-container .right-section .remember-block label span i{color:#b2b2b2; background-color:transparent; display: flex; align-items: center; width:6px; position: absolute; top:50%; margin-left: -3px; left:50%; margin-top: -3px; height:6px; font-family: 'latoregular'; font-size: 11px;}
+.login-wrapper .login-container .right-section .remember-block label input:checked + span{background-color: #fff;}
+.login-wrapper .login-container .right-section .remember-block label input:checked + span i{background-color:#666;}
+.login-wrapper .login-container .right-section .poweredby{margin-top:50px; display: flex; align-items: center; justify-content: center; width: 100%;}
+/*Login Css*/
+
+
+@media only screen and (max-width: 900px) {
+
+.login-wrapper .login-container{flex-direction: column;}
+.login-wrapper .login-container .left-section{display: none;}
+.login-wrapper .login-container .right-section{width: 100%;}
+.login-wrapper .login-container .right-section .form-wrapper{padding:20px;}
+}

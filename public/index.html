@@ -10,6 +10,72 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .content-wrapper{
+          background-color: white;
+          top: 10%;
+          min-height: 12%;
+          position:absolute;
+          z-index: 2;
+          width: 100%;    
+      }
+      .tagcloud03 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .tagcloud03 ul li {
+        display: inline-block;
+        margin: 0 .3em .3em 0;
+        padding: 0;
+      }
+      .tagcloud03 ul li a {
+        position: relative;
+        display: inline-block;
+        max-width: 200px;
+        height: 40px;
+        line-height: 36px;
+        padding: 1px 6.5em 0 1em;
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #333;
+        font-size: 13px;
+        text-decoration: none;
+        -webkit-transition: .2s;
+        transition: .2s;
+      }
+      .tagcloud03 li span {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        z-index: 2;
+        width: 35px;
+        height: 35px;
+        line-height: 25px;
+        background-color: #3498db;
+        border-radius: 100%;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        -webkit-transition: .2s;
+        transition: .2s;
+      }
+      .tagcloud03 ul li a:hover {
+        background-color: #3498db;
+        border: 1px solid #3498db;
+        color: #fff;
+      }
+      .tagcloud03 ul li a:hover span {
+        background-color: #fff;
+        color: #3498db;
+      }
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -34,5 +100,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var API_URL = "https://swapi.co/api/";
+    </script>
   </body>
 </html>
